@@ -1,3 +1,4 @@
+# add a comment
 set number
 set numberwidth=3
 
