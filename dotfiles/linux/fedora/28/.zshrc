@@ -226,7 +226,8 @@ __minikube_quote() {
 	fi
 }
 
-#autoload -U +X bashcgit pullompinit && bashcompinit
+autoload -U +X compinit
+compinit
 
 # use word boundary patterns for BSD or GNU sed
 LWORD='[[:<:]]'
