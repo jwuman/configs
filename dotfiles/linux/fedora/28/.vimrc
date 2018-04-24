@@ -24,5 +24,19 @@ set background=dark
 autocmd FileType typescript JsPreTmpl html
 autocmd FileType typescript syn clear foldBraces
 
-source /usr/share/vim/vimfiles/plugin/fugitive.vim
-source /usr/share/vim/vimfiles/plugin/jedi.vim
+""source /usr/share/vim/vimfiles/plugin/fugitive.vim
+""source /usr/share/vim/vimfiles/plugin/jedi.vim
+""source /usr/share/vim/vimfiles/plugin/syntastic.vim
+
+"" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"" Syntastic settings end
+
+"" Jedi settings
