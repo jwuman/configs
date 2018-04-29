@@ -5,6 +5,7 @@ set laststatus=2
 set t_Co=256
 
 set number
+set relativenumber
 filetype plugin indent on
 
 let g:Powerline_symbols = 'fancy'
@@ -15,10 +16,11 @@ set modeline
 
 set nocompatible
 set cursorline
+set incsearch
 
 "colorscheme wombat256mod
-colorscheme gruvbox
-"colorscheme molokai
+"colorscheme gruvbox
+colorscheme molokai
 "colorscheme solarized
 "color dracula
 set background=dark
@@ -53,6 +55,12 @@ nmap <F8> :TagbarToggle<CR>
 " Indent Guides settings
 set ts=4 sw=4 et
 let g:indent_guides_enable_on_vim_startup = 1
+
+map<C-t><up> :tabr<cr>
+map<C-t><down> :tabl<cr>
+map<C-t><left> :tabp<cr>
+map<C-t><right> :tabn<cr>
+
 " Indent Guides settings end
 
 " airline settings
